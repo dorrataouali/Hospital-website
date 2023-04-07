@@ -1,0 +1,298 @@
+*{ margin:0;
+    padding:0;
+     box-sizing:border-box;
+      font-family: "Poppins";
+    }
+body{ background-color: #091921;
+    color:#ffff;
+    
+      justify-content: center;
+    }
+/*navbar*/
+.navbar  ul{ 
+    list-style-type: none;
+     display:flex;
+      width: 90vw;
+       justify-content: space-between; 
+     
+        border-radius: 10px;
+         padding:20px;
+          box-shadow: 7px 7px 11px #061217,
+           -7px -7px 11px #0c202b; }
+          .navbar ul li a{
+             cursor: pointer;
+             position:relative;
+             text-align:center;
+             color:white;
+             font-family: "Poppins";
+             text-decoration: none;
+           }
+          
+.navbar  li a.active::after{
+     position:absolute;
+     content:"";
+     height:3px;
+     width:100%;
+     background-color: #32be8f;
+     left:0;
+     bottom: -7px;
+     border-top-left-radius:2px;
+     border-top-right-radius:2px;
+     animation:appear 0.2s linear;
+     color:white;
+     font-family: "Poppins";
+     text-decoration: none;
+
+ }
+    @keyframes appear{
+        from{
+            width:0;
+        }
+        to {
+            width:100%;
+        }
+    }
+    .navbar{
+        display:flex;
+        flex-direction: row;
+        margin-top:40px;
+        margin-left:50px;
+    }
+/*logo*/
+
+.logo{
+	display: flex;
+	align-items: center;
+
+}
+.logo i{
+	color: #ffff;
+	font-size:28px;
+	margin-right:3px;
+
+}
+.logo span{
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight:600;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+/*About us description*/
+
+   .about-us-title{
+    background-color:#091921;
+    height:150px;
+   }
+   .about-us-title a{
+    font-size:3em;
+    padding-left:200px;
+    padding-top:60px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+
+   /*the description of who are we*/
+   .background-about-us {
+    background-image: url("C:/Users/Admin/Desktop/web-project/Sans titre (3).png");
+    height:700px;
+    width:100%;
+       }
+       .description-about-us a{
+        color: #1F2B3C;
+        
+       }
+       .background-about-us .description-about-us{
+        background-color: #ECF4F3;
+        height:300px;
+        width:900px;
+    padding-top:80px;   
+    padding-left:35px;
+    padding-right:35px;
+        
+       }
+       .box-about-us{
+        padding-top:350px;
+        padding-left:270px;
+        margin-bottom: 300px;
+        
+       }
+
+       .our-team-img{
+        background-image: url("C:/Users/Admin/Desktop/web_project/images/Dorra Taouali (15).png");
+        height:650px;
+        width: 100%;
+       
+       }
+       .feedback{
+        display: flex;
+        flex-direction: row;
+        padding-left:10%;
+       padding-bottom: 80px;
+        padding-top:50px;
+        padding-right:90px;
+        width:100%;
+        background-color: #ECF4F3;
+        
+       }
+      
+       .feedback-client{
+        background-color:#ECF4F3;
+        padding-left:50px;
+        padding-right:50px;
+        height:210px;
+        width:700px;
+        border: 3px solid #1F2B3C  ;
+       }
+       .feedback-client a{
+        font-size:1.4em;
+        color:#1F2B3C;
+    
+       }
+        .name-user {
+        font-size:0.8em;
+        color:#1F2B3C;
+        padding-left:100px;
+        text-decoration: underline;
+    
+       }
+       .feedback-client p{
+        font-size: 0.8em;
+        color:#9D9EA0;
+       }
+
+       /*spaces*/
+       .spaces a{
+   color:#ECF4F3;
+       }
+   /*footer*/
+   .footer-background {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-background h3 {
+    margin-top:0;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    padding-left: 90px;
+  }
+  
+  .footer-background ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-background ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-background ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-background .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-background .item.text {
+    margin-bottom:36px;
+    text-align:center;
+
+  }
+  
+  @media (max-width:767px) {
+    .footer-background .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-background .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+    width: 800px;
+    padding-right:280px ;
+
+  }
+  
+  .footer-background .social-media-icons {
+    text-align:center;
+    
+        padding-right:500px;
+      
+  }
+  
+  @media (max-width:991px) {
+    .footer-background .social-media-icons {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-background .social-media-icons > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-background .social-media-icons > a:hover {
+    opacity:0.9;
+    color: #32be8f;
+  }
+  .footer-background .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+    margin-right:240px;
+
+  }
+  
+ .social-media-icons svg{
+    fill: white;
+    height:20px;
+ }
+ .social-media-icons svg:hover{
+    fill:#32be8f ;
+    height:20px;
+    opacity:0.9;
+ }
+ .column-alignment{
+    display:flex;
+    flex-direction: column;
+ }
+ .footer-content p{
+   padding-right:160px;
+  
+   width:800px;
+ }
+ .footer-content h3{
+    padding-right:600px;
+  }
+ .col-md-6.item.text{
+    align-items:center;
+
+ }
+ .footer-container{
+    padding-left: 500px;
+ }

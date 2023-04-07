@@ -1,0 +1,306 @@
+*{ margin:0;
+    padding:0;
+     box-sizing:border-box;
+      font-family: "Poppins";
+    }
+body{ background-color: #091921;
+    color:#ffff;
+    
+      justify-content: center;
+    }
+/*navbar*/
+.navbar  ul{ 
+    list-style-type: none;
+     display:flex;
+      width: 90vw;
+       justify-content: space-between; 
+     
+        border-radius: 10px;
+         padding:20px;
+          box-shadow: 7px 7px 11px #061217,
+           -7px -7px 11px #0c202b; }
+          .navbar ul li a{
+             cursor: pointer;
+             position:relative;
+             text-align:center;
+             color:white;
+             font-family: "Poppins";
+             text-decoration: none;
+           }
+          
+.navbar  li a.active::after{
+     position:absolute;
+     content:"";
+     height:3px;
+     width:100%;
+     background-color: #32be8f;
+     left:0;
+     bottom: -7px;
+     border-top-left-radius:2px;
+     border-top-right-radius:2px;
+     animation:appear 0.2s linear;
+     color:white;
+     font-family: "Poppins";
+     text-decoration: none;
+
+ }
+    @keyframes appear{
+        from{
+            width:0;
+        }
+        to {
+            width:100%;
+        }
+    }
+    .navbar{
+        display:flex;
+        flex-direction: row;
+        margin-top:40px;
+        margin-left:50px;
+    }
+/*logo*/
+
+.logo{
+	display: flex;
+	align-items: center;
+
+}
+.logo i{
+	color: #ffff;
+	font-size:28px;
+	margin-right:3px;
+
+}
+.logo span{
+	color: #fff;
+	font-size: 1.7rem;
+	font-weight:600;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+
+.description-clinic{
+    display:flex;
+    flex-direction: row;
+    padding-left:310px;
+    padding-top:70px;
+    padding-bottom:90px;
+}
+.description-clinic a{
+    font-size: 2.5em;
+    padding-right:85px;
+    padding-top:3px;
+    color:#fff;
+    font-family: "Poppins";
+}
+.description-clinic p{
+    font-family: system-ui;
+    font-size: 0.8em;
+    color:#9D9EA0;
+}
+/*doctor description*/
+.doctor-description{
+    position: relative;
+    display: inline-block;
+}
+.image{
+    display: block;
+   width: 100%;
+    height: auto;
+    position: center;
+}
+.title-doctor {
+    position: absolute;
+    top: 30%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    text-align: left;
+}
+.title-doctor a{
+
+    color:#348A7B;
+    font-size: 1.5em;
+    font-family: inherit;}
+
+    .title-doctor p{
+        color:#434444;
+    font-size: 0.6em; 
+    font-family: system-ui;
+    }
+
+  
+       .donation{
+        display:flex;
+        flex-direction: row;
+    padding-left:310px;
+    padding-top:70px;
+    padding-bottom:70px;
+  background-color: #fff;
+       }
+       .donation-definition a{
+        color:#434444;
+        margin-bottom: 50px;
+        
+        font-size:2em;
+       }
+       .donation-definition p{
+        color: #9C9FA2;
+        font-size:0.75em;
+       }
+       .donation img{height:320px;
+    width:700px;
+    margin-left:10px;}
+    
+    .donate-button {
+        background-color:#0c202b;
+        color:white;
+        border-radius: 50px;
+        font-size:0.35em;
+        height:40px;
+        width:110px;
+        align-items: center;
+        margin-top: 30px;
+        
+    }
+    .donate-button a{
+    
+        color: white;
+        font-family: "Poppins";
+        padding-left:15px;
+    }
+    .donate-button:hover{
+        background-color: #32be8f;}
+    /*footer*/
+ .footer-background {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+  }
+  
+  .footer-background h3 {
+    margin-top:0;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    padding-left: 90px;
+  }
+  
+  .footer-background ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-background ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-background ul a:hover {
+    opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+    .footer-background .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  .footer-background .item.text {
+    margin-bottom:36px;
+    text-align:center;
+
+  }
+  
+  @media (max-width:767px) {
+    .footer-background .item.text {
+      margin-bottom:0;
+    }
+  }
+  
+  .footer-background .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+    width: 800px;
+    padding-right:280px ;
+
+  }
+  
+  .footer-background .social-media-icons {
+    text-align:center;
+    
+        padding-right:500px;
+      
+  }
+  
+  @media (max-width:991px) {
+    .footer-background .social-media-icons {
+      text-align:center;
+      margin-top:20px;
+    }
+  }
+  
+  .footer-background .social-media-icons > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+  }
+  
+  .footer-background .social-media-icons > a:hover {
+    opacity:0.9;
+    color: #32be8f;
+  }
+  .footer-background .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+    margin-right:240px;
+
+  }
+  
+ .social-media-icons svg{
+    fill: white;
+    height:20px;
+ }
+ .social-media-icons svg:hover{
+    fill:#32be8f ;
+    height:20px;
+    opacity:0.9;
+ }
+ .column-alignment{
+    display:flex;
+    flex-direction: column;
+ }
+ .footer-content p{
+   padding-right:160px;
+  
+   width:800px;
+ }
+ .footer-content h3{
+    padding-right:600px;
+  }
+ .col-md-6.item.text{
+    align-items:center;
+
+ }
+ .footer-container{
+    padding-left: 500px;
+ }
